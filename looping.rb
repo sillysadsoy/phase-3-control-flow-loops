@@ -1,5 +1,10 @@
 def happy_new_year
-  # your code here
+  count = 10
+  until count == 0
+    puts count
+    count -= 1
+  end
+  puts 'Happy New Year!'
 end
 
 # No need to modify this code! Use this to implement the fizzbuzz_printer method.
@@ -16,9 +21,15 @@ def fizzbuzz(num)
 end
 
 def fizzbuzz_printer
-  # your code here
+  (1..100).each {|num| puts fizzbuzz(num)}
 end
 
 def reverse_string(str)
-  # your code here
+  count = str.length - 1 
+  new_str = ''
+  while count >= 0 
+    new_str += str[count]
+    count -= 1 
+  end
+  new_str
 end
